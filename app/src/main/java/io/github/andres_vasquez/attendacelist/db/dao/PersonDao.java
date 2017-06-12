@@ -18,18 +18,5 @@ import io.github.andres_vasquez.attendacelist.db.entity.PersonEntity;
 
 @Dao
 public interface PersonDao {
-    @Query("SELECT * FROM person")
-    LiveData<List<PersonEntity>> loadlAllPersons();
-
-    @Query("SELECT * FROM person WHERE id = :personId")
-    LiveData<PersonEntity> loadPerson(int personId);
-
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(PersonEntity person);
-
-    @Update(onConflict = OnConflictStrategy.REPLACE)
-    void updatePerson(PersonEntity person);
-
-    @Query("DELETE FROM person WHERE id=:personId")
-    void deletePerson(int personId);
+    //TODO Step 7: Define person table CRUD operations
 }

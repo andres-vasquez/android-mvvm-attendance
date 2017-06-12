@@ -15,6 +15,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        //TODO Step 1: Add maven repository
         maven {
             url "https://maven.google.com"
         }
@@ -31,6 +32,4 @@ ext {
     runnerVersion = "0.5"
     rulesVersion = "0.5"
     espressoVersion = "2.2.2"
-    archLifecycleVersion = "1.0.0-alpha1"
-    archRoomVersion = "1.0.0-alpha1"
 }

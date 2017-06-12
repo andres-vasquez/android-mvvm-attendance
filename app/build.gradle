@@ -36,11 +36,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:' + rootProject.supportLibVersion;
     compile 'com.android.support:design:' + rootProject.supportLibVersion;
 
-    compile 'android.arch.lifecycle:extensions:' + rootProject.archLifecycleVersion;
-    compile 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;
-    annotationProcessor "android.arch.lifecycle:compiler:" + rootProject.archLifecycleVersion;
-    annotationProcessor "android.arch.persistence.room:compiler:" + rootProject.archRoomVersion;
-
     testCompile 'junit:junit:4.12'
 
     // Testing-only dependencies
@@ -58,4 +53,11 @@ dependencies {
     androidTestCompile 'com.android.support:support-annotations:' + rootProject.supportLibVersion;
     androidTestCompile 'com.android.support:support-v4:' + rootProject.supportLibVersion;
     androidTestCompile 'com.android.support:recyclerview-v7:' + rootProject.supportLibVersion;
+
+    //Architecture components
+    //TODO Step 2: Add architecture libraries
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha1';
+    compile 'android.arch.persistence.room:runtime:1.0.0-alpha1';
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1";
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1";
 }

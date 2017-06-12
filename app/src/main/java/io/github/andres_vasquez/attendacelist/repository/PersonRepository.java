@@ -11,9 +11,5 @@ import io.github.andres_vasquez.attendacelist.db.entity.PersonEntity;
  * Use the methods to manage the data
  */
 public interface PersonRepository {
-    LiveData<List<PersonEntity>> getPersonList();
-    LiveData<PersonEntity> getPerson(int personId);
-    void addPerson(PersonEntity person);
-    void updatePerson(PersonEntity person);
-    void deletePerson(PersonEntity person);
+    //TODO Step 8: Define the data access method
 }

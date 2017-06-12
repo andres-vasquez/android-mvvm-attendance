@@ -12,9 +12,10 @@ import java.util.Date;
 /**
  * Create person table
  */
-@Entity(tableName = "person")
+
+//TODO Step 4: Prepare Person table
 public class PersonEntity{
-    @PrimaryKey(autoGenerate = true)
+    //TODO Step 5: Set id as PrimaryKey Autoincrement
     private int id;
     private String name;
     private boolean student;

@@ -98,13 +98,6 @@ public class AddFragmentDialog extends DialogFragment implements View.OnClickLis
     }
 
     /**
-     * Add observer to person database
-     */
-    private void loadPerson() {
-        mActivity.personViewModel.getPerson(mPersonId).observe(mActivity, observerPerson);
-    }
-
-    /**
      * Observer for person
      */
     final Observer<PersonEntity> observerPerson=new Observer<PersonEntity>() {
@@ -136,6 +129,15 @@ public class AddFragmentDialog extends DialogFragment implements View.OnClickLis
     };
 
     /**
+     * Add observer to person database
+     */
+    private void loadPerson() {
+        //TODO Step 16: Subscribe single person observer
+    }
+
+
+
+    /**
      * Save button click
      * @param v Save button view
      */
@@ -161,10 +163,10 @@ public class AddFragmentDialog extends DialogFragment implements View.OnClickLis
         personEntity.setTimestamp(new Date());
 
         if(mPersonId==0){
-            mActivity.personViewModel.personRepository.addPerson(personEntity);
+            //TODO Step 14: Adding create action
         } else {
             personEntity.setId(mPersonId);
-            mActivity.personViewModel.personRepository.updatePerson(personEntity);
+            //TODO Step 15: Adding update action
         }
 
         //Close dialog

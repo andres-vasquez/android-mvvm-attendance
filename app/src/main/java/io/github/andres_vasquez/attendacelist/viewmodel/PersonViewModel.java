@@ -34,7 +34,7 @@ public class PersonViewModel extends AndroidViewModel{
      * Get all persons in LiveData variable
      */
     private void subscribeToDbChanges() {
-        mPersonList = personRepository.getPersonList();
+        //TODO Step 10: Bind the person List LiveData
     }
 
     @Nullable
@@ -49,6 +49,7 @@ public class PersonViewModel extends AndroidViewModel{
      */
     @Nullable
     public LiveData<PersonEntity> getPerson(int personId) {
-        return personRepository.getPerson(personId);
+        //TODO Step 11: Bind the single person LiveData
+        return null;
     }
 }

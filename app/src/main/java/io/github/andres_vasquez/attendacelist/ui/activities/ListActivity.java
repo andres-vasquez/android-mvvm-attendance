@@ -85,21 +85,14 @@ public class ListActivity extends AppCompatActivity implements LifecycleRegistry
      * Init view model personViewModel
      */
     private void initViewModel() {
-        personViewModel = ViewModelProviders.of(this).get(PersonViewModel.class);
+        //TODO Step 12: Initialize the PersonViewModel
     }
 
     /**
      * Subscribe to variables
      */
     private void subscribeUI() {
-        personViewModel.getPersonList().observe(this, new Observer<List<PersonEntity>>() {
-            @Override
-            public void onChanged(@Nullable List<PersonEntity> personEntities) {
-                if(personEntities!=null){
-                    mPersonAdapter.swap(personEntities);
-                }
-            }
-        });
+        //TODO Step 13: Subscribe to PersonList observer
     }
 
     @Override
@@ -133,6 +126,6 @@ public class ListActivity extends AppCompatActivity implements LifecycleRegistry
      */
     @Override
     public void onDeleteCLick(PersonEntity person) {
-        personViewModel.personRepository.deletePerson(person);
+        //TODO Step 17: Adding delete action
     }
 }
