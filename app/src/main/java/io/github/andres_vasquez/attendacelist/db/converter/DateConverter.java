@@ -8,6 +8,9 @@ import java.util.Date;
  * Created by andresvasquez on 6/10/17.
  */
 
+/**
+ * Database doesn't support Date object in order to save this data as a long value use DateConverter
+ */
 public class DateConverter {
 
     @TypeConverter

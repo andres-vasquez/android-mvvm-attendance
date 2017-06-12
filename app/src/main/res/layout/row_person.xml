@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_sm"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardBackgroundColor="@android:color/white"
+    app:contentPadding="@dimen/check_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/delete_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_delete"
+                android:paddingTop="@dimen/space_md"
+                android:paddingBottom="@dimen/space_md"
+                android:paddingStart="@dimen/space_xs"
+                android:paddingEnd="@dimen/space_xs"
+                android:contentDescription="@string/content_description_delete"/>
+
+            <ImageView
+                android:id="@+id/edit_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_toStartOf="@+id/delete_image_view"
+                android:src="@drawable/ic_edit"
+                android:paddingTop="@dimen/space_md"
+                android:paddingBottom="@dimen/space_md"
+                android:paddingStart="@dimen/space_xs"
+                android:paddingEnd="@dimen/space_xs"
+                android:contentDescription="@string/content_description_edit"/>
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/edit_image_view"
+                android:paddingStart="@dimen/space_md"
+                android:paddingEnd="@dimen/space_xxs"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/textPrimary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginEnd="@dimen/space_md"
+            android:background="@color/disabled"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingBottom="@dimen/space_sm">
+
+            <ImageView
+                android:id="@+id/lunch_check_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_check_disabled"
+                android:paddingStart="@dimen/space_xs"
+                android:paddingEnd="@dimen/space_xs"
+                android:contentDescription="@string/content_description_lunch"/>
+
+            <ImageView
+                android:id="@+id/snack_check_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_toStartOf="@+id/lunch_check_image_view"
+                android:src="@drawable/ic_check_disabled"
+                android:paddingStart="@dimen/space_xs"
+                android:paddingEnd="@dimen/space_xs"
+                android:contentDescription="@string/content_description_snack"/>
+
+            <TextView
+                android:id="@+id/student_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/snack_check_image_view"
+                android:paddingStart="@dimen/space_md"
+                android:paddingEnd="@dimen/space_xxs"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/textSecondary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="@string/student"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

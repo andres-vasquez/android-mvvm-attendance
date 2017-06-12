@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/dialog_width"
+    android:padding="@dimen/space_md">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name_text_input_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:hint="@string/hint_name"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/person_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_md">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/student_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/student"
+            android:checked="true"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/professional_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/professional"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_separator"
+        android:layout_marginTop="@dimen/space_md"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_marginEnd="@dimen/space_md"
+        android:background="@color/disabled"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/snack_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snack"
+        android:layout_marginTop="@dimen/space_md"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/lunch_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lunch"
+        android:layout_marginTop="@dimen/space_md"/>
+
+    <Button
+        android:id="@+id/save_person_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_person"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/space_xxl"
+        android:padding="@dimen/space_md"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>

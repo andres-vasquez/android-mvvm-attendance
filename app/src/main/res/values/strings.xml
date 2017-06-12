@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">AttendaceList</string>
+    <string name="app_title">IO Extended 2017</string>
+    <string name="app_subtitle">Android Arch Components</string>
+
+    <!-- Add form -->
+    <string name="hint_name">Name</string>
+    <string name="student">Student</string>
+    <string name="professional">Professional</string>
+    <string name="snack">Snack</string>
+    <string name="lunch">Lunch</string>
+
+    <string name="create_person">Create</string>
+    <string name="update_person">Update</string>
+
+    <string name="error_name">Please insert a Valid Name</string>
+
+    <!-- Content description-->
+    <string name="content_description_edit">Edit option</string>
+    <string name="content_description_delete">Delete option</string>
+    <string name="content_description_snack">Snack indicator check</string>
+    <string name="content_description_lunch">Lunch indicator check</string>
 </resources>
