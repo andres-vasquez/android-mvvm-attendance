@@ -6,6 +6,9 @@ Te dejo mis datos por si tienes dudas:
 andres.vasquez.agramont@gmail.com
 https://github.com/andres-vasquez
 
+
+
+
 PREPARING THE PROJECT (done)
 
 Step 1: Add maven repository
@@ -21,11 +24,14 @@ allprojects {
 }
 
 Step 2: Add architecture libraries
-Ve a build.gradle del modulo app y agrega las librerías de Android Arch
+Ve a app/build.gradle y agrega las librerías de Android Arch
 compile 'android.arch.lifecycle:extensions:1.0.0-alpha1';
 compile 'android.arch.persistence.room:runtime:1.0.0-alpha1';
 annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1";
 annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1";
+
+
+
 
 PREPARING THE DATABASE
 
@@ -58,15 +64,16 @@ LiveData<PersonEntity> loadPerson(int personId);
 @Insert(onConflict = OnConflictStrategy.IGNORE)
 void insert(PersonEntity person);
 
-@Update(onConflict = OnConflictStrategy.REPLACE)void updatePerson(PersonEntity person);
+@Update(onConflict = OnConflictStrategy.REPLACE)
+void updatePerson(PersonEntity person);
 
 @Query("DELETE FROM person WHERE id=:personId")
 void deletePerson(int personId);
 
 
 
-PREPARING THE REPOSITORY
 
+PREPARING THE REPOSITORY
 
 Step 8: Define the data access method
 Ve a repository/PersonRepository.class Línea 14 y agrega los métodos a la interfaz
@@ -132,6 +139,7 @@ Ve a viewmodel/PersonViewModel.class Línea 52 y llena la variable livedata desd
 return personRepository.getPerson(personId);
 
 Nota: Eliminar return null;
+
 
 
 PREPARING THE UI
