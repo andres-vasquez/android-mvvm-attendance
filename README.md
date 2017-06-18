@@ -212,3 +212,7 @@ personViewModel.personRepository.deletePerson(person);
 ```
 
 
+
+Problems?
+--------------
+Si tienes problemas o no puedes hacer algun paso puedes cambiar al branch **Complete** y ver el ejemplo funcionando!
