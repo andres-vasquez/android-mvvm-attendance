@@ -3,6 +3,7 @@ Android Architecture Components!
 
 > **Hola!:**
 > Bienvenido al **Codelab de Android Architecture Components**.
+>
 > Slides: https://goo.gl/yTttTD
 >
 > Mi nombre es Andrés Vasquez y vengo a mostrarte de manera sencilla una aplicacion que implementa los nuevos componentes de arquitectura de Android.
